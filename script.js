@@ -4,7 +4,8 @@ function generateQRCode() {
  
   if (url) {
     
-    // Generate new QR code
+    qrcodeDiv.textContent = "";
+    
    let qrcode = new QRCode(qrcodeDiv, {
       text: url,
       width: 128,
